@@ -7,9 +7,28 @@
 		.state {
 			stroke-linejoin: round;
 			stroke:#000;
-			fill: #f9f9f9;
 			stroke-width: .97063118000000004;
 			transition: fill .1s;
+      	}
+
+      	.light {
+      		fill: rgb(249, 249, 249);
+      	}
+
+      	.less-light {
+      		fill: rgb(249, 200, 200);
+      	}
+
+      	.medium {
+      		fill: rgb(249, 150, 150);
+      	}
+
+      	.less-medium {
+      		fill: rgb(249, 100, 100);
+      	}
+
+      	.heavy {
+      		fill: rgb(249, 50, 50);
       	}
 
 		.state:hover {
@@ -77,10 +96,116 @@
 	</svg>
 	<div id="stateData">
 	</div>
+	<button id="next">Next Month</button>
 	<script src="states.js"></script>
 	<script>
 		let selectedState = null;
 		let stateDataDiv = document.getElementById("stateData");
+
+		function generateFamilies() {
+			for ([abbr, state] of Object.entries(states)) {
+				state.hidden.persons = [];
+				for (var x = 0; x < meta.simulated_household * state.hidden.household_proportion; ++x) {
+					person = {
+						"state": state,
+						"vacation_frequency": 1, // Frequency is roughly how many times per month
+						"work_frequency": 20,
+						"work_type": {
+							"contact": 3, // 1-5, how many other people do they meet? 5 is the highest, 1 is rarely in contact.
+							"outer": false, // do they work inter-state?
+						},
+						"infected": Math.random() < 0.01,
+						// Taxes paid per work day (num is large since one person represents many people)
+						"taxes_paid": 200,
+					}
+					state.hidden.persons.push(person);
+				}
+			}
+		}
+
+		function countInfected(state) {
+			var amount = 0;
+			for (person of state.hidden.persons) {
+				if (person.infected) amount++;
+			}
+			return amount;
+		}
+
+		function updateInfections() {
+			for ([_, state] of Object.entries(states)) {
+				let infected = countInfected(state);
+				state.Infected = fObject.format(Math.round(infected * meta.real_per_simulated));
+				let proportion = infected / state.hidden.persons.length;
+				// Wanted to do something more dynamic, but that's hard to do with CSS
+				// I'll instead do ranges
+				// let decreaseColor = Math.round(249 * infected / state.hidden.persons.length);
+				// state.hidden.tag.style.fill = `rgb(249, ${249 - decreaseColor}, ${249 - decreaseColor})`;
+
+				if (proportion > 0.9)
+					state.hidden.tag.className.baseVal = "state heavy";
+				else if (proportion > 0.75)
+					state.hidden.tag.className.baseVal = "state less-medium";
+				else if (proportion > 0.5)
+					state.hidden.tag.className.baseVal = "state medium";
+				else if (proportion > 0.25)
+					state.hidden.tag.className.baseVal = "state less-light";
+				else
+					state.hidden.tag.className.baseVal = "state light";
+			}
+		}
+
+		function nextMonth() {
+			let monthlyReport = {};
+			monthlyReport.infected = 0;
+			monthlyReport.infectedFromWork = 0;
+			monthlyReport.infectedFromVacation = 0;
+			monthlyReport.amountWorked = 0;
+			monthlyReport.amountVacationed = 0;
+
+			for ([_, state] of Object.entries(states)) {
+				for (person of state.hidden.persons) {
+					// How many times did the person work this month?
+					let amountWorked = person.work_frequency + (Math.round(Math.random() * 10) - 5);
+					let vacationTimes = person.vacation_frequency + (Math.round(Math.random() * 2) - 1)
+					let taxesEarned = amountWorked * person.taxes_paid;
+					
+					monthlyReport.amountWorked += amountWorked;
+					monthlyReport.amountVacationed += vacationTimes;
+
+					meta.money += taxesEarned;
+
+					// Infection stuff
+					if (!person.infected) continue;
+					if (!person.work_type.outer) {
+						for (var x = 0; x < amountWorked; ++x) {
+							for (var y = 1; y < person.work_type.contact; ++y) {
+								if (Math.random() < 0.02) {
+									person.state.hidden.persons[Math.round(Math.random() * (person.state.hidden.persons.length - 1))].infected = true;
+									monthlyReport.infectedFromWork += 1;
+								}
+							}
+						}
+					}
+
+					for (var x = 0; x < vacationTimes; ++x) {
+						for (var y = 0; y < meta.vacation_type.contact; ++y) {
+								if (Math.random() < 0.02) {
+									person.state.hidden.persons[Math.round(Math.random() * (person.state.hidden.persons.length - 1))].infected = true;
+									monthlyReport.infectedFromVacation += 1;
+								}
+						}
+					}
+
+					// TODO: Handle the case if it's outer
+					// TODO: Handle incubation and whatever
+				}
+			}
+
+			monthlyReport.infected = monthlyReport.infectedFromVacation + monthlyReport.infectedFromWork;
+			console.log(monthlyReport)
+			updateInfections();
+			displayData(selectedState);
+		}
 
 		function displayData(state) {
 			html = ""
@@ -104,12 +229,14 @@
 			let s = document.getElementsByClassName("state");
 			for (var i = 0; i < s.length; ++i) {
 				let abb = s[i].id;
-				if (!states[abb].hidden)
-					states[abb].hidden = {};
 				states[abb].hidden.tag = s[i];
 				s[i].addEventListener("click", (e) => selectState(states[e.path[0].id]));
 			}
+			generateFamilies();
+			updateInfections();
 			selectState(states["PA"])
+
+			document.getElementById("next").addEventListener("click", nextMonth);
 		}
 	</script>
 </body>
