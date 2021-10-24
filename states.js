@@ -467,7 +467,7 @@ let fObject = new Intl.NumberFormat('en-US');
 // Sync data
 for (state of Object.keys(states)) {
   state = states[state];
-  state.Population = fObject.format(Math.round(meta.real_population * state.hidden.population_proportion)) + " People";
+  state.Population = fObject.format(Math.round(meta.real_population * state.hidden.population_proportion));
 }
 
 
