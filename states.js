@@ -453,22 +453,20 @@ let states = {
 
 let meta = {
   "real_population": 576851,
-  "simulated_population": 300,
+  "simulated_population": 500,
   "real_infectivity": 109,
   "vacation_state": states["HI"],
   "vacation_type": {
     "contact": 5, // How many people do people contact when in vacation?
   },
+  "Fatalities": 0,
   "money": 0,
 };
 
 let fObject = new Intl.NumberFormat('en-US');
 
-// Sync data
-for (state of Object.keys(states)) {
-  state = states[state];
-  state.Population = fObject.format(Math.round(meta.real_population * state.hidden.population_proportion));
+for ([_, state] of Object.entries(states)) {
+  state.Fatalities = 0;
 }
-
 
 meta.real_per_simulated = meta.real_population / meta.simulated_population;
