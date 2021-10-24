@@ -3,7 +3,7 @@ let states = {
     "Name": "Massachusetts",
     "Capital": "Boston",
     "hidden": {
-      "household_proportion": 11.375426443170607,
+      "population_proportion": 12.186711993218400,
       "infectivity_proportion": 60.733944954128400,
       "tag": {}
     }
@@ -12,7 +12,7 @@ let states = {
     "Name": "Minnesota",
     "Capital": "Saint Paul",
     "hidden": {
-      "household_proportion": 9.49845068035341,
+      "population_proportion": 9.892492168688280,
       "infectivity_proportion": 5.880733944954130,
       "tag": {}
     }
@@ -21,7 +21,7 @@ let states = {
     "Name": "Montana",
     "Capital": "Helena",
     "hidden": {
-      "household_proportion": 1.8594921360619903,
+      "population_proportion": 1.879558152798560,
       "infectivity_proportion": 1.926605504587160,
       "tag": {}
     }
@@ -30,7 +30,7 @@ let states = {
     "Name": "North Dakota",
     "Capital": "Bismarck",
     "hidden": {
-      "household_proportion": 1.3834012020808253,
+      "population_proportion": 1.350598334751960,
       "infectivity_proportion": 1.275229357798170,
       "tag": {}
     }
@@ -39,7 +39,7 @@ let states = {
     "Name": "Hawaii",
     "Capital": "Honolulu",
     "hidden": {
-      "household_proportion": 1.9966188760587742,
+      "population_proportion": 2.522784913261830,
       "infectivity_proportion": 2.055045871559630,
       "tag": {}
     }
@@ -48,7 +48,7 @@ let states = {
     "Name": "Idaho",
     "Capital": "Boise",
     "hidden": {
-      "household_proportion": 2.737962894555,
+      "population_proportion": 3.188182043543310,
       "infectivity_proportion": 4.816513761467890,
       "tag": {}
     }
@@ -57,7 +57,7 @@ let states = {
     "Name": "Washington",
     "Capital": "Olympia",
     "hidden": {
-      "household_proportion": 12.378894485465079,
+      "population_proportion": 13.357489195650200,
       "infectivity_proportion": 52.348623853211000,
       "tag": {}
     }
@@ -66,7 +66,7 @@ let states = {
     "Name": "Arizona",
     "Capital": "Phoenix",
     "hidden": {
-      "household_proportion": 11.174519015562732,
+      "population_proportion": 12.397485659208400,
       "infectivity_proportion": 6.100917431192660,
       "tag": {}
     }
@@ -75,7 +75,7 @@ let states = {
     "Name": "California",
     "Capital": "Sacramento",
     "hidden": {
-      "household_proportion": 56.689306000408514,
+      "population_proportion": 68.541482982607300,
       "infectivity_proportion": 74.816513761467900,
       "tag": {}
     }
@@ -84,7 +84,7 @@ let states = {
     "Name": "Colorado",
     "Capital": "Denver",
     "hidden": {
-      "household_proportion": 9.33935098065632,
+      "population_proportion": 10.009021393739500,
       "infectivity_proportion": 15.908256880733900,
       "tag": {}
     }
@@ -93,7 +93,7 @@ let states = {
     "Name": "Nevada",
     "Capital": "Carson City",
     "hidden": {
-      "household_proportion": 4.774433835576551,
+      "population_proportion": 5.382003324948730,
       "infectivity_proportion": 5.697247706422020,
       "tag": {}
     }
@@ -102,7 +102,7 @@ let states = {
     "Name": "New Mexico",
     "Capital": "Santa Fe",
     "hidden": {
-      "household_proportion": 3.390897910048196,
+      "population_proportion": 3.670830075704130,
       "infectivity_proportion": 1.752293577981650,
       "tag": {}
     }
@@ -111,7 +111,7 @@ let states = {
     "Name": "Oregon",
     "Capital": "Salem",
     "hidden": {
-      "household_proportion": 7.005541045019361,
+      "population_proportion": 7.345494763812490,
       "infectivity_proportion": 6.330275229357800,
       "tag": {}
     }
@@ -120,7 +120,7 @@ let states = {
     "Name": "Utah",
     "Capital": "Salt Lake City",
     "hidden": {
-      "household_proportion": 4.247321828240642,
+      "population_proportion": 5.671509627269430,
       "infectivity_proportion": 9.027522935779820,
       "tag": {}
     }
@@ -129,7 +129,7 @@ let states = {
     "Name": "Wyoming",
     "Capital": "Cheyenne",
     "hidden": {
-      "household_proportion": 1,
+      "population_proportion": 1,
       "infectivity_proportion": 1,
       "tag": {}
     }
@@ -138,7 +138,7 @@ let states = {
     "Name": "Arkansas",
     "Capital": "Little Rock",
     "hidden": {
-      "household_proportion": 5.032881213032538,
+      "population_proportion": 5.220627163686980,
       "infectivity_proportion": 5.174311926605500,
       "tag": {}
     }
@@ -147,7 +147,7 @@ let states = {
     "Name": "Iowa",
     "Capital": "Des Moines",
     "hidden": {
-      "household_proportion": 5.499641461792865,
+      "population_proportion": 5.530663897609610,
       "infectivity_proportion": 6.440366972477060,
       "tag": {}
     }
@@ -156,7 +156,7 @@ let states = {
     "Name": "Kansas",
     "Capital": "Topeka",
     "hidden": {
-      "household_proportion": 4.9075275639827725,
+      "population_proportion": 5.092961614004310,
       "infectivity_proportion": 5.100917431192660,
       "tag": {}
     }
@@ -165,7 +165,7 @@ let states = {
     "Name": "Missouri",
     "Capital": "Jefferson City",
     "hidden": {
-      "household_proportion": 10.493309459758976,
+      "population_proportion": 10.669848886454200,
       "infectivity_proportion": 12.174311926605500,
       "tag": {}
     }
@@ -174,7 +174,7 @@ let states = {
     "Name": "Nebraska",
     "Capital": "Lincoln",
     "hidden": {
-      "household_proportion": 3.299316387151729,
+      "population_proportion": 3.400365085611360,
       "infectivity_proportion": 1.660550458715600,
       "tag": {}
     }
@@ -183,7 +183,7 @@ let states = {
     "Name": "Oklahoma",
     "Capital": "Oklahoma City",
     "hidden": {
-      "household_proportion": 6.432223241098474,
+      "population_proportion": 6.863736042756280,
       "infectivity_proportion": 5.183486238532110,
       "tag": {}
     }
@@ -192,7 +192,7 @@ let states = {
     "Name": "South Dakota",
     "Capital": "Pierre",
     "hidden": {
-      "household_proportion": 1.4967210051238369,
+      "population_proportion": 1.537081499381990,
       "infectivity_proportion": 0.990825688073395,
       "tag": {}
     }
@@ -201,7 +201,7 @@ let states = {
     "Name": "Louisiana",
     "Capital": "Baton Rouge",
     "hidden": {
-      "household_proportion": 7.559710735720401,
+      "population_proportion": 8.074454235149110,
       "infectivity_proportion": 20.541284403669700,
       "tag": {}
     }
@@ -210,7 +210,7 @@ let states = {
     "Name": "Texas",
     "Capital": "Austin",
     "hidden": {
-      "household_proportion": 42.1190998735338,
+      "population_proportion": 50.525187613439200,
       "infectivity_proportion": 15.880733944954100,
       "tag": {}
     }
@@ -219,7 +219,7 @@ let states = {
     "Name": "Connecticut",
     "Capital": "Hartford",
     "hidden": {
-      "household_proportion": 5.957149251850274,
+      "population_proportion": 6.251083902082170,
       "infectivity_proportion": 28.697247706422000,
       "tag": {}
     }
@@ -228,7 +228,7 @@ let states = {
     "Name": "New Hampshire",
     "Capital": "Concord",
     "hidden": {
-      "household_proportion": 2.3121889952672956,
+      "population_proportion": 2.388015276041820,
       "infectivity_proportion": 3.366972477064220,
       "tag": {}
     }
@@ -237,7 +237,7 @@ let states = {
     "Name": "Rhode Island",
     "Capital": "Providence",
     "hidden": {
-      "household_proportion": 1.7839513952568655,
+      "population_proportion": 1.902361268334460,
       "infectivity_proportion": 5.302752293577980,
       "tag": {}
     }
@@ -246,7 +246,7 @@ let states = {
     "Name": "Vermont",
     "Capital": "Montpelier",
     "hidden": {
-      "household_proportion": 1.1300646237956375,
+      "population_proportion": 1.114806076439150,
       "infectivity_proportion": 2.688073394495410,
       "tag": {}
     }
@@ -255,7 +255,7 @@ let states = {
     "Name": "Alabama",
     "Capital": "Montgomery",
     "hidden": {
-      "household_proportion": 8.117709179881878,
+      "population_proportion": 8.709838415812750,
       "infectivity_proportion": 9.229357798165140,
       "tag": {}
     }
@@ -264,7 +264,7 @@ let states = {
     "Name": "Florida",
     "Capital": "Tallahassee",
     "hidden": {
-      "household_proportion": 33.62137061551232,
+      "population_proportion": 37.337522167769500,
       "infectivity_proportion": 61.844036697247700,
       "tag": {}
     }
@@ -273,7 +273,7 @@ let states = {
     "Name": "Georgia",
     "Capital": "Atlanta",
     "hidden": {
-      "household_proportion": 16.335426617007315,
+      "population_proportion": 18.569627165420500,
       "infectivity_proportion": 37.770642201834900,
       "tag": {}
     }
@@ -282,7 +282,7 @@ let states = {
     "Name": "Mississippi",
     "Capital": "Jackson",
     "hidden": {
-      "household_proportion": 4.799605390676268,
+      "population_proportion": 5.133524948383550,
       "infectivity_proportion": 8.596330275229360,
       "tag": {}
     }
@@ -291,7 +291,7 @@ let states = {
     "Name": "South Carolina",
     "Capital": "Columbia",
     "hidden": {
-      "household_proportion": 8.352254010195523,
+      "population_proportion": 8.873045205781040,
       "infectivity_proportion": 9.935779816513760,
       "tag": {}
     }
@@ -300,7 +300,7 @@ let states = {
     "Name": "Illinois",
     "Capital": "Springfield",
     "hidden": {
-      "household_proportion": 21.060899344201026,
+      "population_proportion": 22.211122109522200,
       "infectivity_proportion": 54.990825688073400,
       "tag": {}
     }
@@ -309,7 +309,7 @@ let states = {
     "Name": "Indiana",
     "Capital": "Indianapolis",
     "hidden": {
-      "household_proportion": 11.170829331467486,
+      "population_proportion": 11.763051463896200,
       "infectivity_proportion": 23.458715596330300,
       "tag": {}
     }
@@ -318,7 +318,7 @@ let states = {
     "Name": "Kentucky",
     "Capital": "Fankfort",
     "hidden": {
-      "household_proportion": 7.538507003446313,
+      "population_proportion": 7.811091599043770,
       "infectivity_proportion": 5.449541284403670,
       "tag": {}
     }
@@ -327,7 +327,7 @@ let states = {
     "Name": "North Carolina",
     "Capital": "Raleigh",
     "hidden": {
-      "household_proportion": 17.23365826311055,
+      "population_proportion": 18.097200143537900,
       "infectivity_proportion": 13.743119266055000,
       "tag": {}
     }
@@ -336,7 +336,7 @@ let states = {
     "Name": "Ohio",
     "Capital": "Columbus",
     "hidden": {
-      "household_proportion": 20.323066827175893,
+      "population_proportion": 20.454932036175700,
       "infectivity_proportion": 20.174311926605500,
       "tag": {}
     }
@@ -345,7 +345,7 @@ let states = {
     "Name": "Tennessee",
     "Capital": "Nashvile",
     "hidden": {
-      "household_proportion": 11.287617176804968,
+      "population_proportion": 11.980286070406400,
       "infectivity_proportion": 20.541284403669700,
       "tag": {}
     }
@@ -354,7 +354,7 @@ let states = {
     "Name": "Virgina",
     "Capital": "Richmond",
     "hidden": {
-      "household_proportion": 13.6941821,
+      "population_proportion": 14.962950571291400,
       "infectivity_proportion": 11.467889908256900,
       "tag": {}
     }
@@ -363,7 +363,7 @@ let states = {
     "Name": "Wisconsin",
     "Capital": "Madison",
     "hidden": {
-      "household_proportion": 10.248351810726595,
+      "population_proportion": 10.217054317319400,
       "infectivity_proportion": 12.394495412844000,
       "tag": {}
     }
@@ -372,7 +372,7 @@ let states = {
     "Name": "West Virgina",
     "Capital": "Charleston",
     "hidden": {
-      "household_proportion": 3.1837540905949995,
+      "population_proportion": 3.109496213060220,
       "infectivity_proportion": 1.633027522935780,
       "tag": {}
     }
@@ -381,7 +381,7 @@ let states = {
     "Name": "Delaware",
     "Capital": "Dover",
     "hidden": {
-      "household_proportion": 1.5789674968818042,
+      "population_proportion": 1.716124267791860,
       "infectivity_proportion": 3.706422018348620,
       "tag": {}
     }
@@ -390,7 +390,7 @@ let states = {
     "Name": "Maryland",
     "Capital": "Annapolis",
     "hidden": {
-      "household_proportion": 9.583635012451055,
+      "population_proportion": 10.708526118529700,
       "infectivity_proportion": 15.229357798165100,
       "tag": {}
     }
@@ -399,7 +399,7 @@ let states = {
     "Name": "New Jersey",
     "Capital": "Trenton",
     "hidden": {
-      "household_proportion": 14.045458298747072,
+      "population_proportion": 16.102934726645200,
       "infectivity_proportion": 204.238532110092000,
       "tag": {}
     }
@@ -408,7 +408,7 @@ let states = {
     "Name": "New York",
     "Capital": "Albany",
     "hidden": {
-      "household_proportion": 31.913090338590447,
+      "population_proportion": 31.913090338590447,
       "infectivity_proportion": 768.000000000000000,
       "tag": {}
     }
@@ -417,7 +417,7 @@ let states = {
     "Name": "Pennsylvania",
     "Capital": "Harrisburg",
     "hidden": {
-      "household_proportion": 21.960382614590984,
+      "population_proportion": 21.960382614590984,
       "infectivity_proportion": 44.431192660550500,
       "tag": {}
     }
@@ -426,7 +426,7 @@ let states = {
     "Name": "Maine",
     "Capital": "Augusta",
     "hidden": {
-      "household_proportion": 2.4333705633613065,
+      "population_proportion": 2.361717323884330,
       "infectivity_proportion": 2.779816513761470,
       "tag": {}
     }
@@ -435,7 +435,7 @@ let states = {
     "Name": "Michigan",
     "Capital": "Lancing",
     "hidden": {
-      "household_proportion": 17.10136418355418,
+      "population_proportion": 17.469556263229200,
       "infectivity_proportion": 69.862385321100900,
       "tag": {}
     }
@@ -444,7 +444,7 @@ let states = {
     "Name": "Alaska",
     "Capital": "Juneau",
     "hidden": {
-      "household_proportion": 1.101020856058861,
+      "population_proportion": 1.271369903146570,
       "infectivity_proportion": 2.174311926605500,
       "tag": {}
     }
@@ -452,8 +452,9 @@ let states = {
 }
 
 let meta = {
-  "real_household": 230101,
-  "simulated_household": 300,
+  "real_population": 576,851,
+  "simulated_population": 300,
+  "real_infectivity": 109,
   "vacation_state": states["HI"],
   "vacation_type": {
     "contact": 5, // How many people do people contact when in vacation?
