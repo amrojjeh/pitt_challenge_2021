@@ -364,6 +364,7 @@ let states = {
     "Capital": "Albany",
     "hidden": {
       "household_proportion": 31.913090338590447,
+      "household_proportion_infection": 
       "tag": {}
     }
   },
@@ -420,4 +421,4 @@ for (state of Object.keys(states)) {
 }
 
 
-meta.real_per_simulated = meta.real_household / meta.simulated_household
+meta.real_per_simulated = meta.real_household / meta.simulated_household;
