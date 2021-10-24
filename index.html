@@ -133,7 +133,7 @@
 		function generateFamilies() {
 			for ([_, state] of Object.entries(states)) {
 				state.hidden.persons = [];
-				for (var x = 0; x < meta.simulated_household * state.hidden.household_proportion; ++x) {
+				for (var x = 0; x < meta.simulated_population * state.hidden.population_proportion; ++x) {
 					state.hidden.persons.push(generatePerson(state));
 				}
 			}
