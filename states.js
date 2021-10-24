@@ -364,7 +364,6 @@ let states = {
     "Capital": "Albany",
     "hidden": {
       "household_proportion": 31.913090338590447,
-      "household_proportion_infection": 
       "tag": {}
     }
   },
