@@ -394,7 +394,7 @@
 			for (var i = 0; i < s.length; ++i) {
 				let abb = s[i].id;
 				states[abb].hidden.tag = s[i];
-				s[i].addEventListener("click", (e) => selectState(states[e.path[0].id]));
+				s[i].addEventListener("click", (e) => selectState(states[e.target.id]));
 			}
 			selectState(states["PA"])
 			generateFamilies();
